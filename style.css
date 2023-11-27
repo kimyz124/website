@@ -1,127 +1,109 @@
+/* Copyright 2023 The MediaPipe Authors.
 
-*{
-    /* Google Fonts */
-    font-family: 'Montserrat', sans-serif;
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
 
-    list-style: none;
-    text-decoration: none;
-    border-collapse: collapse;
-    margin:0px;
-    padding:0px;
-    color:#000;
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. */
+
+@use "@material";
+body {
+  font-family: roboto;
+  margin: 2em;
+  color: #3d3d3d;
+  --mdc-theme-primary: #007f8b;
+  --mdc-theme-on-primary: #f1f3f4;
 }
 
-html{
-    background-color:blue;
+h1 {
+  color: #007f8b;
 }
 
-h1{
-    font-size: 48px;
-    font-weight: 80px;
+h2 {
+  clear: both;
 }
 
-/* .contents1{
-    font-size: 20px;
-    font-weight: lighter;
-} */
-
-
-/*background*/
-.intro_bg{
-    background-color: blue;
-    width:100%;
-    height:100%;
+em {
+  font-weight: bold;
 }
 
-.header{
-    display:flex;
-    width:1280px;
-    margin:auto;
-    background-color: blue;
-    height: 86px;
+video {
+  clear: both;
+  display: block;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
 }
 
-
-.search_area{
-    width:300px;
-    height:40px;
-    background-color:rgba(0,0,0,0.5);
-    border-radius:5px;
-    margin-top: 24px;
+section {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
 }
 
-.search_area > form > input{
-    border:none;
-    width:250px;
-    height:40px;
-    background-color: rgba(0,0,0,0);
-    color:#fff;
-    padding-left:10px;
+.mdc-button.mdc-button--raised.removed {
+  display: none;
 }
 
-.search_area > form > span{
-    width:50px;
-    color:#fff;
-    font-weight:bold;
-    cursor:pointer;
+.invisible {
+  opacity: 0.2;
 }
 
-
-
-
-.navBar > li{
-
-    margin-left: 84px;
+.videoView,
+.detectOnClick {
+  position: absolute;
+  float: left;
+  width: 100%;
+  height: 100%;
+  margin: 2% 1%;
+  cursor: pointer;
+  background-color: blue;
 }
 
-.navBar > li > a{
-
-    color:#fff;
+.detectOnClick p {
+  position: absolute;
+  padding: 5px;
+  background-color: #007f8b;
+  color: #fff;
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  z-index: 2;
+  font-size: 12px;
+  margin: 0;
 }
 
-.intro_text{
-    width:100%;
-    margin: 400px auto  231px auto;
-    background-color: blue;
-    text-align: center;
+.videoView p {
+  position: absolute;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: #007f8b;
+  color: #fff;
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  z-index: 2;
+  font-size: 12px;
+  margin: 0;
 }
 
-.intro_text > h1{
-
-    color:#fff;
-
+.highlighter {
+  background: rgba(0, 255, 0, 0.25);
+  border: 1px dashed #fff;
+  z-index: 1;
+  position: absolute;
 }
 
+.detectOnClick {
+  z-index: 0;
+}
 
+.detectOnClick img {
+  width: 100%;
+}
 
-
-/* .Image > li >img {
-    width:1280px;
-    height:auto;
-    margin-top:150px;
-    margin-bottom:50px;
-} */
-
-
-
-
-/* 
-.test{
-    position: relative;
-    top:-50px;
-    display:flex;
-    width:1280px;
-    background-color: rgb(0,0,255);
-    margin:auto;
-} 
-
-.test > li{
-    flex:1;
-    height:100px;
-    background-color: rgb(236, 136, 6);
-} 
-
-.test > li > div{
-    text-align: center;
-    color:#fff;
-}  */
+.highlighter{
+  background-image: /*oragne*/ url();
+  background-size: 100% 100%;
+}
