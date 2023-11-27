@@ -56,13 +56,11 @@ section {
 
 .videoView,
 .detectOnClick {
-  position: absolute;
+  position: relative;
   float: left;
-  width: 100%;
-  height: 100%;
+  width: 48%;
   margin: 2% 1%;
   cursor: pointer;
-  background-color: blue;
 }
 
 .detectOnClick p {
@@ -102,8 +100,7 @@ section {
 .detectOnClick img {
   width: 100%;
 }
-
 .highlighter{
-  background-image: /*oragne*/ url();
+  background-image: url('https://elenahorlau.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd9b5a516-23c8-427c-93a7-59c4ae2ca8e7%2FTampon.jpg?table=block&id=1a1dcbfb-bbed-4383-815c-b17de9e60603&spaceId=79e52df7-cf0d-42e9-87a5-c226ec35565b');
   background-size: 100% 100%;
 }
